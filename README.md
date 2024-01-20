@@ -15,14 +15,14 @@ The communication system is designed to collect data from various sensors on Hig
 7. SD card modules for data storage
 
 ## Libraries
-The project utilizes the following Arduino libraries: \
-1. **File.h**: Library for handling files on the SD card.
-2. **TinyMPU6050.h**: Library for MPU6050 sensor.
-3. **SDHCI.h**: Library for SD card communication.
-4. **LoRa.h**: Library for LoRa communication.
-5. **GNSS.h**: Library for Spresense GNSS.
-6. **Wire.h**: Library for I2C communication.
-7. **dht.h**: Library for DHT temperature and humidity sensor. \
+The project utilizes the following Arduino libraries:
+  1. **File.h**: Library for handling files on the SD card.
+  2. **TinyMPU6050.h**: Library for MPU6050 sensor.
+  3. **SDHCI.h**: Library for SD card communication.
+  4. **LoRa.h**: Library for LoRa communication.
+  5. **GNSS.h**: Library for Spresense GNSS.
+  6. **Wire.h**: Library for I2C communication.
+  7. **dht.h**: Library for DHT temperature and humidity sensor. \
 Make sure to install these libraries before compiling the code.
 
 ## Configuration
@@ -46,12 +46,12 @@ The data format for beacon and data packets is specified in the code. Beacon pac
 
 ## Communication Flow
 1. **Beacon Packets**:
-- LowTier devices periodically send beacon packets with location information.
-- GroundStation receives and processes beacon packets.
+  - LowTier devices periodically send beacon packets with location information.
+  - GroundStation receives and processes beacon packets.
 
 2. **Data Packets**:
-- LowTier devices periodically send data packets with sensor readings.
-- GroundStation receives and processes data packets, storing data in CSV files.
+  - LowTier devices periodically send data packets with sensor readings.
+  - GroundStation receives and processes data packets, storing data in CSV files.
 
 
 
